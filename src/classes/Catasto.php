@@ -89,6 +89,44 @@ class Catasto extends OpenApiBase {
     return $data->data;
   }
 
+  function createVisuraCatastale($entita, $tipo_catasto, $provincia, $comune, $foglio, $particella, $subalterno, $tipo_visura, $richiedente, $callback=NULL){
+    $param = array(
+      "entita"=>$entita,
+      "tipo_catasto"=>$tipo_catasto,
+      "provincia"=>$provincia,
+      "comune"=>$comune,
+      "foglio"=>$foglio,
+      "particella"=>$particella,
+      "subalterno"=>$subalterno,
+      "tipo_visura"=>$tipo_visura,
+      "richiedente"=>$richiedente
+    );
+
+    if($callback != NULL){
+      $param['callback'] = $callback;
+    }
+
+    $data = $this->connect("visura_catastale", "POST", $param);
+    return $data->data;
+  }
+
+
+  function getVisureCatastali($ttl= 86400){
+    $data = $this->connect("visura_catastale", "GET", [], $ttl);
+    return $data->data; 
+  }
+  
+  function getVisuraCatastale($id, $ttl= 86400){
+    $data = $this->connect("visura_catastale/$id", "GET", [], $ttl);
+    return $data->data; 
+  }
+  
+  function getVisuraCatastaleDocumento($id, $ttl= 86400){
+    $data = $this->connect("visura_catastale/$id/documento", "GET", [], $ttl);
+    return $data->data; 
+  }
+
+
   
 
 
