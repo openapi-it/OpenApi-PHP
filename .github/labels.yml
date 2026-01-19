@@ -1,0 +1,31 @@
+- name: "type:feature"
+  color: "0e8a16"
+  description: "No negative impact on current processes; a request for additional functionality"
+
+- name: "type:trivial"
+  color: "fbca04"
+  description: "An annoyance or hindrance; a simple workaround is available"
+
+- name: "type:text"
+  color: "fef2c0"
+  description: "A tiny negative impact; text-based content needs updating"
+
+- name: "type:tweak"
+  color: "f9d0c4"
+  description: "A small negative impact; a workaround is unavailable or very complex/inefficient"
+
+- name: "type:minor"
+  color: "ff9500"
+  description: "A medium negative impact; no workaround available"
+
+- name: "type:major"
+  color: "ff6b35"
+  description: "A large negative impact; no workaround available"
+
+- name: "type:crash"
+  color: "d93f0b"
+  description: "A severe negative impact; hardware or software necessary for job duties is crashed or crashing"
+
+- name: "type:block"
+  color: "b60205"
+  description: "A critical negative impact; the issue is holding up progress on another task, project, or issue"
