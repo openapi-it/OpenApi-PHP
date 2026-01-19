@@ -255,4 +255,12 @@ $request->setJson(['$0' => 'abcd', '$1' => '12485671007']);
                     // url di callback,  oggetto con dati aggiuntivi, metodo
 $request->setCallbackData('https://example.com', new stdClass(), 'POST');
 $visura = $this->openapi->visengine->sendRequest($request);
+$recipient = '+39-3939989741';
+// OR
+$recipients = [
+    [
+        'number' => '+39-3939989741', 
+        'fields' => ['nome' => 'NomeDestinatario']
+    ]
+];
 ```
