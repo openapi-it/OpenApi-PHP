@@ -12,7 +12,5 @@ jobs:
       - name: Add Issue to Project
         uses: actions/add-to-project@v0.5.0
         with:
-          # URL del tuo progetto GitHub (formato: https://github.com/users/USERNAME/projects/PROJECT_NUMBER)
-          # oppure per progetti organization: https://github.com/orgs/ORG_NAME/projects/PROJECT_NUMBER
-          project-url: https://github.com/users/YOUR_USERNAME/projects/1
+          project-url: https://github.com/orgs/openapi-it/projects/15
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
