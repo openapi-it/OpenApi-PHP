@@ -1,3 +1,20 @@
+
+![Read this!](https://raw.githubusercontent.com/openapi/.github/main/assets/under-construction-a5.gif)
+
+# ⚠️ Heads Up, Hackers
+
+This codebase is entering **⚡ heavy refactoring ⚡**  
+…and switching its **main language**.
+
+> Expect broken APIs, moving files, disappearing functions…  
+> …basically, chaos with a purpose.
+
+**TL;DR:** Don’t rely on this as “stable”… yet.  
+Fork, explore, contribute, but **brace for impact**.
+
+---
+
+
 # OpenAPI Library
 
 <!-- vscode-markdown-toc -->
@@ -255,4 +272,5 @@ $request->setJson(['$0' => 'abcd', '$1' => '12485671007']);
                     // url di callback,  oggetto con dati aggiuntivi, metodo
 $request->setCallbackData('https://example.com', new stdClass(), 'POST');
 $visura = $this->openapi->visengine->sendRequest($request);
+
 ```
